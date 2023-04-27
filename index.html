@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aneka Gorengan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Gorengan.com</h1>
+    </div>
+    <div class="container">
+        <div class="item-select">
+            <div class="item">
+                <img src="gambar bala-bala.jpg" alt="bala-bala">
+                <div class="item-desc">
+                    <h3>Bala-bala</h3>
+                    <p>Rp 50.000</p>
+                    <button onclick="addToCart('Bala-bala')">Tambah ke
+                    Keranjang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Pisang Goreng.jpg" alt="Pisang Goreng">
+                <div class="item-desc">
+                    <h3>Pisang Goreng</h3>
+                    <p>Rp 40.000</p>
+                    <button onclick="addToCart('Pisang Goreng')">Tambah ke
+                    Keranjang</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="gambar cireng.avif" alt="Cireng">
+                <div class="item-desc">
+                    <h3>Cireng Isi</h3>
+                    <p>Rp 60.000</p>
+                    <button onclick="addToCart('Cireng Isi')">Tambah ke
+                    Keranjang</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items">
+                <li>
+                    <h4>Bala-bala</h4>
+                    <p id="bala_bala"></p>
+                </li>
+                <li>
+                    <h4>Pisang Goreng</h4>
+                    <p id="pisang_goreng"></p>
+                </li>
+                <li>
+                    <h4>Cireng Isi</h4>
+                    <p id="cireng_isi"></p>
+                </li>
+            </ul>
+            <p>Total: Rp. <span id="cart-total">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+            <button onclick="clearcheckout()">Pesan Ulang</button>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
