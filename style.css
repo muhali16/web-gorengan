@@ -5,7 +5,9 @@
     font-weight: 600;
 }
 body {
-    background-color: #ECA72C;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 button {
     padding: 5px 10px;
